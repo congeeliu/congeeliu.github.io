@@ -1,6 +1,48 @@
-.main {
-  font-size: 36px;
+body {
+  background-color: black;
+  color: white;
+
+  & .animate-text {
+    & .container {
+      padding-top: 13.75rem;
+      padding-left: max(1.5rem, min(6.73139vw - 0.0776699rem, 8rem));
+      padding-right: max(1.5rem, min(6.73139vw - 0.0776699rem, 8rem));
+      font-size: max(5.125rem, min(13.3333vw + 2rem, 18rem));
+      font-weight: 500;
+      color: #fffce1;
+      /* font-family: Mori, sans-serif; */
+      letter-spacing: -0.02em;
+      line-height: 0.9;
+
+      & .first-line {
+        display: flex;
+      }
+
+      & .second-line {
+        display: flex;
+        justify-content: end;
+      }
+
+      & .letter-n {
+        position: relative;
+      }
+
+      & .windmill-img {
+        position: absolute;
+        z-index: -1;
+        top: max(-5.75rem, min(-4.78964vw - 0.00242718rem, -1.125rem));
+        left: max(0.3125rem, min(0.711974vw + 0.145631rem, 1rem));
+        display: block;
+        width: max(1.9375rem, min(6.86084vw + 0.32949rem, 8.5625rem));
+        height: max(1.9375rem, min(6.86084vw + 0.32949rem, 8.5625rem));
+      }
+    }
+  }
 }
+
+/* .main {
+  font-size: 36px;
+} */
 
 /* #wheel {
   width: 300px;
@@ -15,12 +57,11 @@
 
 /* Global styles come from external css https://codepen.io/GreenSock/pen/gOWxmWG */
 
-.gsap-area {
+/* .gsap-area {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   min-height: 100px;
-  /* margin: 0; */
   overflow: hidden;
 }
 
@@ -32,4 +73,4 @@
 
 .green {
   background: green;
-}
+} */
